@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+/* Allow overflow for Quill editor elements */
+#description-editor,
+#description-editor *,
+.ql-toolbar,
+.ql-toolbar *,
+.ql-picker,
+.ql-picker *,
+.ql-picker-options,
+.ql-picker-label,
+.ql-color-picker,
+.ql-icon-picker {
+	overflow: visible !important;
+}
+
+.kbmousebutton {
+	background-color: #003366;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+
+.kbmousebutton:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/* Quill editor styling */
+#description-editor {
+	box-sizing: border-box;
+	overflow: visible !important;
+	z-index: 1000;
+	position: relative;
+}
+
+#description-editor .ql-container {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	height: 315px;
+	overflow-y: auto;
+	border-radius: 10px;
+}
+
+/* Target toolbar that's a sibling of description editor or inside it */
+.ql-toolbar.ql-snow {
+	background: #f3f3f3 !important;
+	border-radius: 10px;
+	overflow: visible !important;
+	position: fixed !important;
+	left: 935px !important;
+	top: 220px !important;
+	z-index: 2147483647 !important;
+	margin-top: 5px;
+	width: auto;
+	max-width: fit-content;
+	padding: 5px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	border: 1px solid #ccc !important;
+	pointer-events: auto !important;
+}
+
+/* Additional class to force hide toolbar */
+.toolbar-hidden {
+	display: none !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+#description-editor .ql-container.ql-snow {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* Allow Quill toolbar dropdowns to show */
+.ql-picker {
+	position: relative !important;
+}
+
+.ql-picker-options {
+	z-index: 2147483647 !important;
+	position: absolute !important;
+	display: none;
+	background: white;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	margin-top: 3px;
+}
+
+.ql-picker.ql-expanded .ql-picker-options {
+	display: block !important;
+}
+
+.ql-picker.ql-expanded {
+	z-index: 2147483647 !important;
+}
+
+/* Specific styling for visible toolbar */
+#visible-toolbar .ql-picker-options {
+	z-index: 2147483647 !important;
+	position: absolute !important;
+	background: white !important;
+	border: 1px solid #ccc !important;
+}
+
+#visible-toolbar .ql-picker.ql-expanded .ql-picker-options {
+	display: block !important;
+}
+
+.ql-color-picker .ql-picker-options,
+.ql-background .ql-picker-options,
+.ql-size .ql-picker-options,
+.ql-align .ql-picker-options {
+	overflow: visible !important;
+}
+
+/* Ensure picker labels and items are visible */
+.ql-picker-label {
+	cursor: pointer;
+}
+
+.ql-picker-item {
+	cursor: pointer;
+}
+
+/* Color picker styling - make the color icon more obvious */
+.ql-color .ql-picker-label,
+.ql-background .ql-picker-label {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 2px 4px;
+}
+
+.ql-color .ql-picker-label svg,
+.ql-background .ql-picker-label svg {
+	width: 18px;
+	height: 18px;
+}
+
