@@ -130,49 +130,49 @@ xpcloseicon = loadImage('/art/icons/closebutton.png')
 
 // Load demo poster audio and album art
 testposter1 = loadImage('/art/posters/testposter1.png')
-testposter1Audio = loadSound('/music/demosongs/Red Alert - Basement Jaxx.mp3')
+loadSound('/music/demosongs/Red Alert - Basement Jaxx.mp3', s => { testposter1Audio = s; }, () => { testposter1Audio = null; })
 testposter1AlbumArt = loadImage('/art/albumart/remedy.jpg')
 
 testposter2 = loadImage('/art/posters/testposter2.png')
-testposter2Audio = loadSound('/music/demosongs/Believe In Me - Lord Michael.mp3')
+loadSound('/music/demosongs/Believe In Me - Lord Michael.mp3', s => { testposter2Audio = s; }, () => { testposter2Audio = null; })
 testposter2AlbumArt = loadImage('/art/albumart/believeinme.jpg')
 
 testposter3 = loadImage('/art/posters/testposter3.png')
-testposter3Audio = loadSound('/music/demosongs/Dont Sweat The Technique - Eric B and Rakim.mp3')
+loadSound('/music/demosongs/Dont Sweat The Technique - Eric B and Rakim.mp3', s => { testposter3Audio = s; }, () => { testposter3Audio = null; })
 testposter3AlbumArt = loadImage('/art/albumart/dontsweat.jpg')
 
 testposter4 = loadImage('/art/posters/testposter4.jpg')
-testposter4Audio = loadSound('/music/demosongs/Chime - Orbital.mp3')
+loadSound('/music/demosongs/Chime - Orbital.mp3', s => { testposter4Audio = s; }, () => { testposter4Audio = null; })
 testposter4AlbumArt = loadImage('/art/albumart/chimeorbital.jpeg')
 
 
 // load location posters
 locationPoster1 = loadImage('/art/posters/locationposters/locationposter1.png')
-locationPoster1audio = loadSound('/music/locationaudio/Judith - A Perfect Circle.mp3')
+loadSound('/music/locationaudio/Judith - A Perfect Circle.mp3', s => { locationPoster1audio = s; }, () => { locationPoster1audio = null; })
 locationPoster1AlbumArt = loadImage('/art/albumart/merdenoms-apc.jpg')
 
 locationPoster2 = loadImage('/art/posters/locationposters/locationposter2.png')
-locationPoster2audio = loadSound('/music/locationaudio/Sexx Laws - Beck.mp3')
+loadSound('/music/locationaudio/Sexx Laws - Beck.mp3', s => { locationPoster2audio = s; }, () => { locationPoster2audio = null; })
 locationPoster2AlbumArt = loadImage('/art/albumart/midnitevultures-beck.jpg')
 
 locationPoster3 = loadImage('/art/posters/locationposters/locationposter3.jpg')
-locationPoster3audio = loadSound('/music/locationaudio/The Day I Went Away - Sleater-Kinney.mp3')
+loadSound('/music/locationaudio/The Day I Went Away - Sleater-Kinney.mp3', s => { locationPoster3audio = s; }, () => { locationPoster3audio = null; })
 locationPoster3AlbumArt = loadImage('/art/albumart/sleaterkinney.jpg')
 
 locationPoster4 = loadImage('/art/posters/locationposters/locationposter4.jpg')
-locationPoster4audio = loadSound('/music/locationaudio/Dramamine - Modest Mouse.mp3')
+loadSound('/music/locationaudio/Dramamine - Modest Mouse.mp3', s => { locationPoster4audio = s; }, () => { locationPoster4audio = null; })
 locationPoster4AlbumArt = loadImage('/art/albumart/modestmouse.jpg')
 
 locationPoster5 = loadImage('/art/posters/locationposters/locationposter5.jpg')
-locationPoster5audio = loadSound('/music/locationaudio/Out Of Control - The Chemical Brothers.mp3')
+loadSound('/music/locationaudio/Out Of Control - The Chemical Brothers.mp3', s => { locationPoster5audio = s; }, () => { locationPoster5audio = null; })
 locationPoster5AlbumArt = loadImage('/art/albumart/surrender.jpg')
 
 locationPoster6 = loadImage('/art/posters/locationposters/locationposter6.jpg')
-locationPoster6audio = loadSound('/music/locationaudio/Breathe - The Prodigy.mp3')
+loadSound('/music/locationaudio/Breathe - The Prodigy.mp3', s => { locationPoster6audio = s; }, () => { locationPoster6audio = null; })
 locationPoster6AlbumArt = loadImage('/art/albumart/fatoftheland.jpg')
 
 locationPoster7 = loadImage('/art/posters/locationposters/locationposter7.jpg')
-locationPoster7audio = loadSound('/music/locationaudio/Break Stuff - Limp Bizkit.mp3')
+loadSound('/music/locationaudio/Break Stuff - Limp Bizkit.mp3', s => { locationPoster7audio = s; }, () => { locationPoster7audio = null; })
 locationPoster7AlbumArt = loadImage('/art/albumart/limpb.jpg')
 
 soundFormats('mp3')

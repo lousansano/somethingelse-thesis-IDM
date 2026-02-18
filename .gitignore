@@ -55,4 +55,7 @@ yarn-error.log*
 dist/
 out/
 
+# --- Copyrighted Media ---
+music/
+
 # End of https://www.toptal.com/developers/gitignore/api/macos
